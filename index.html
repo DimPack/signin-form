@@ -7,33 +7,31 @@
     <title>Signin form</title>
 </head>
 <body>
-    <section class="form-section">
-        <div class="form-wrapper">
-            <h1>Account login</h1>
-            <form action="" class="form-login">
-                <div class="form-user-date">
-                    <label>
-                        <span>username</span>
-                        <input type="text" name="username">
-                    </label>
-                    <label>
-                        <span>password</span>
-                        <input type="password" name="password">
-                    </label>
-                </div>
 
-                <div class="remember-forgot"> 
-                    
-                    <span>
-                        <input type="checkbox" name="remember">
-                        remember me
-                    </span>
-                    <a href="#">forgot password?</a>
-                </div>
-                <button class="btn-log">log in</button>
-            </form>
-            
-        </div>
-    </section>
+    <div class="form-wrapper">
+        <h1 class="form-title">Account login</h1>
+        <form action="" class="form-login">
+            <div class="form-user-date">
+                <label class="label">
+                    <span>username</span>
+                    <input type="text" name="username" class="form-user-input">
+                </label>
+                <label class="label">
+                    <span>password</span>
+                    <input type="password" name="password" class="form-user-input">
+                </label>
+            </div>
+
+            <div class="remember-forgot"> 
+                <span>
+                    <input type="checkbox" name="remember">
+                    remember me
+                </span>
+                <a href="#">forgot password?</a>
+            </div>
+            <button class="btn-log">log in</button>
+        </form>
+        
+    </div>
 </body>
 </html>

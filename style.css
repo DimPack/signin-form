@@ -1,47 +1,61 @@
 :root {
+    --border-radius: 5px;
+    --main-color: rgb(69, 150, 255);
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 * {
     box-sizing: border-box;
     text-transform: uppercase;
+    color: rgb(122, 122, 122);
 }
 body {
     background-color: rgb(88, 88, 88);
 }
-input{
-    margin-top: 10px;
-    padding: 0.4rem;
-}
+
 a {
     text-decoration: none;
 }
 
-
-
-.form-section {
-    
-}
 .form-wrapper {
     max-width: 500px;
     width: 100%;
     margin: auto;
-    background-color: #fff;
     padding: 3rem;
+    background-color: #fff;
+
+}
+.form-title,
+.remember-forgot>a {
+    color: var(--main-color);
 }
 .form-login {
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 2rem;
+    
 }
 .form-user-date {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
 }
-.form-user-date input{   
+.form-user-date .form-user-input{   
     display: inline-block;
     width: 100%;
+    background-color: rgba(219, 222, 224, 0.836);
+    border: none;
+    border-radius: var(--border-radius);
 }
+.form-user-input {
+    margin-top: 10px;
+    padding: 0.6rem;
+}
+.form-user-date>.label span {
+    letter-spacing: 3px;
+}
+
 .remember-forgot {
     display: flex;
     justify-content: space-between;
@@ -57,6 +71,14 @@ a {
 }
 .btn-log {
     width: 100%;
-    padding: 0.8rem;
-
+    padding: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: var(--border-radius);
+}
+.btn-log:hover {
+    cursor: pointer;
+    background-color: rgb(38, 116, 218);
 }
